@@ -3,7 +3,7 @@
 
 #define EMPTY_FRAME -1
 
-// ---------- Utility to print frames ----------
+// Utility to print frames \
 void printFrames(int *frames, int n_frames) {
     printf("Frames: [ ");
     for (int i = 0; i < n_frames; i++) {
@@ -13,7 +13,7 @@ void printFrames(int *frames, int n_frames) {
     printf("]");
 }
 
-// ---------- FIFO Paging ----------
+//FIFO Paging 
 void simulateFIFO(int *ref_str, int n_refs, int n_frames) {
     int *frames = (int *)malloc(n_frames * sizeof(int));
     if (frames == NULL) {
@@ -73,7 +73,7 @@ void simulateFIFO(int *ref_str, int n_refs, int n_frames) {
     free(frames);
 }
 
-// ---------- LRU Paging ----------
+//  LRU Paging 
 void simulateLRU(int *ref_str, int n_refs, int n_frames) {
     int *frames = (int *)malloc(n_frames * sizeof(int));
     int *last_used = (int *)malloc(n_frames * sizeof(int));
@@ -164,7 +164,7 @@ void simulateLRU(int *ref_str, int n_refs, int n_frames) {
     free(last_used);
 }
 
-// ---------- Paging Menu ----------
+//  Paging Menu 
 void pagingModule() {
     int n_frames, n_refs;
     printf("\n--- Paging Visualizer ---\n");
