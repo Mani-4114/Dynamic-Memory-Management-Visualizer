@@ -70,6 +70,8 @@ def simulate_lru(ref_string, frame_count):
     return steps, faults
 
 
+
+
 def print_simulation(steps, faults, algo_name):
     print(f"\n=== {algo_name} Simulation ===")
     print(f"{'Step':<5}{'Page':<6}{'Frames':<20}{'Fault':<8}{'Replaced'}")
